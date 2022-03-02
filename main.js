@@ -74,6 +74,8 @@ ulMenuLi.forEach((li) => {
     });
     this.classList.add("active");
   });
+  ulMenu.style.left = "-110%";
+     openMenu.style.opacity = "1";
 });
 
 window.onscroll = function () {
