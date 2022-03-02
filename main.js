@@ -7,7 +7,7 @@ let backgroundImageArr = ["01.webp", "02.webp", "03.webp", "04.webp", "05.webp"]
 
 let backgroundTrue = true;
 let randomBackInterval;
-
+changeBackground();
 let backgroundTrueLocal = localStorage.getItem("backgroundTrueChange");
 
 if (backgroundTrueLocal != null) {
@@ -46,7 +46,7 @@ function changeBackground() {
   if (backgroundTrue === true) {
     randomBackInterval = setInterval(() => {
       let randomNumber = Math.floor(Math.random() * backgroundImageArr.length);
-      landding.style.backgroundImage = `url("../images/${backgroundImageArr[randomNumber]}")`;
+      landding.style.backgroundImage = `url("images/${backgroundImageArr[randomNumber]}")`;
     }, 5000);
   }
 }
