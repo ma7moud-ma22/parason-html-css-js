@@ -46,8 +46,8 @@ function changeBackground() {
   if (backgroundTrue === true) {
     randomBackInterval = setInterval(() => {
       let randomNumber = Math.floor(Math.random() * backgroundImageArr.length);
-      landding.style.backgroundImage = `url("./images/${backgroundImageArr[randomNumber]}")`;
-    }, 5000);
+      landding.style.backgroundImage = `url("images/${backgroundImageArr[randomNumber]}")`;
+    }, 3000);
   }
 }
 
